@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung - Padello App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fafafa;
+        }
+        h1 {
+            color: #0077CC;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        h2 {
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            border-bottom: 2px solid #0077CC;
+            padding-bottom: 5px;
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        p, li {
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .language-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .language-switch a {
+            color: #0077CC;
+            text-decoration: none;
+            padding: 5px 15px;
+            border: 1px solid #0077CC;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .language-switch a:hover, .language-switch a.active {
+            background: #0077CC;
+            color: white;
+        }
+        .last-updated {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .contact-box {
+            background: #e6f3fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .section-de, .section-en {
+            display: none;
+        }
+        .section-de.active, .section-en.active {
+            display: block;
+        }
+        a {
+            color: #0077CC;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switch">
+        <a href="#" id="btn-de" class="active" onclick="showLang('de'); return false;">Deutsch</a>
+        <a href="#" id="btn-en" onclick="showLang('en'); return false;">English</a>
+    </div>
+
+    <!-- GERMAN VERSION -->
+    <div class="section-de active" id="content-de">
+        <h1>Datenschutzerklärung</h1>
+        <p class="last-updated">Stand: Januar 2025</p>
+
+        <p>Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und den Zweck der Verarbeitung personenbezogener Daten innerhalb der mobilen Anwendung "Padello" (nachfolgend "App").</p>
+
+        <h2>1. Verantwortlicher</h2>
+        <p>Verantwortlich für die Datenverarbeitung ist:</p>
+        <div class="contact-box">
+            <strong>Padello App</strong><br>
+            E-Mail: <a href="mailto:pawindustries1505@gmail.com">pawindustries1505@gmail.com</a>
+        </div>
+
+        <h2>2. Welche Daten wir erheben</h2>
+
+        <h3>2.1 Push-Benachrichtigungen</h3>
+        <p>Wenn Sie Push-Benachrichtigungen aktivieren, speichern wir:</p>
+        <ul>
+            <li><strong>Push-Token:</strong> Eine eindeutige Kennung Ihres Geräts, um Ihnen Benachrichtigungen über freie Padel-Slots zu senden</li>
+            <li><strong>Spracheinstellung:</strong> Ihre bevorzugte Sprache (Deutsch/Englisch) für Benachrichtigungen</li>
+            <li><strong>Alarm-Konfigurationen:</strong> Datum, Zeitraum und Standort-Präferenzen für Ihre Slot-Alarme</li>
+        </ul>
+
+        <h3>2.2 Nutzungsanalyse</h3>
+        <p>Wir verwenden Mixpanel zur anonymisierten Analyse der App-Nutzung. Dabei werden erfasst:</p>
+        <ul>
+            <li>Welche Funktionen genutzt werden (z.B. Kartenansicht, Filter)</li>
+            <li>Allgemeine Geräteinformationen (Plattform, App-Version)</li>
+            <li>Keine personenbezogenen Daten wie Name oder E-Mail</li>
+        </ul>
+
+        <h3>2.3 Lokal gespeicherte Daten</h3>
+        <p>Folgende Daten werden nur auf Ihrem Gerät gespeichert und nicht an uns übermittelt:</p>
+        <ul>
+            <li>Spracheinstellung</li>
+            <li>Dark Mode Präferenz</li>
+            <li>Onboarding-Status</li>
+            <li>Zuletzt ausgewählte Region</li>
+        </ul>
+
+        <h2>3. Zweck der Datenverarbeitung</h2>
+        <ul>
+            <li><strong>Push-Benachrichtigungen:</strong> Um Sie über verfügbare Padel-Slots zu informieren, die Ihren Alarm-Kriterien entsprechen</li>
+            <li><strong>Analyse:</strong> Um die App zu verbessern und Fehler zu beheben</li>
+            <li><strong>Einstellungen:</strong> Um Ihre Präferenzen zu speichern</li>
+        </ul>
+
+        <h2>4. Drittanbieter</h2>
+        <p>Wir nutzen folgende Drittanbieter-Dienste:</p>
+        <ul>
+            <li><strong>Expo (expo.dev):</strong> Für Push-Benachrichtigungen. <a href="https://expo.dev/privacy" target="_blank">Datenschutzerklärung</a></li>
+            <li><strong>Mixpanel:</strong> Für anonymisierte Nutzungsanalyse. <a href="https://mixpanel.com/legal/privacy-policy/" target="_blank">Datenschutzerklärung</a></li>
+            <li><strong>Open-Meteo:</strong> Für Wetterdaten (keine personenbezogenen Daten). <a href="https://open-meteo.com/en/terms" target="_blank">Nutzungsbedingungen</a></li>
+        </ul>
+
+        <h2>5. Datenspeicherung und Löschung</h2>
+        <ul>
+            <li><strong>Push-Token und Alarme:</strong> Werden auf unserem Server gespeichert und automatisch gelöscht, wenn Sie die App deinstallieren oder alle Alarme löschen</li>
+            <li><strong>Analysedaten:</strong> Werden nach 12 Monaten automatisch anonymisiert</li>
+            <li><strong>Lokale Daten:</strong> Werden bei Deinstallation der App gelöscht</li>
+        </ul>
+
+        <h2>6. Ihre Rechte (DSGVO)</h2>
+        <p>Sie haben folgende Rechte bezüglich Ihrer Daten:</p>
+        <ul>
+            <li><strong>Auskunft:</strong> Sie können erfahren, welche Daten wir über Sie speichern</li>
+            <li><strong>Löschung:</strong> Sie können die Löschung Ihrer Daten verlangen</li>
+            <li><strong>Widerspruch:</strong> Sie können der Datenverarbeitung widersprechen</li>
+            <li><strong>Datenübertragbarkeit:</strong> Sie können Ihre Daten in einem gängigen Format erhalten</li>
+        </ul>
+        <p>Kontaktieren Sie uns unter <a href="mailto:pawindustries1505@gmail.com">pawindustries1505@gmail.com</a> zur Ausübung Ihrer Rechte.</p>
+
+        <h2>7. Push-Benachrichtigungen deaktivieren</h2>
+        <p>Sie können Push-Benachrichtigungen jederzeit deaktivieren:</p>
+        <ul>
+            <li><strong>iOS:</strong> Einstellungen → Padello → Mitteilungen → Deaktivieren</li>
+            <li><strong>Android:</strong> Einstellungen → Apps → Padello → Benachrichtigungen → Deaktivieren</li>
+        </ul>
+
+        <h2>8. Datensicherheit</h2>
+        <p>Wir verwenden branchenübliche Sicherheitsmaßnahmen:</p>
+        <ul>
+            <li>HTTPS-Verschlüsselung für alle Datenübertragungen</li>
+            <li>Sichere Server-Infrastruktur</li>
+            <li>Keine Speicherung sensibler Daten wie Passwörter oder Zahlungsinformationen</li>
+        </ul>
+
+        <h2>9. Kinder</h2>
+        <p>Diese App richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine Daten von Kindern unter 13 Jahren.</p>
+
+        <h2>10. Änderungen</h2>
+        <p>Wir können diese Datenschutzerklärung aktualisieren. Bei wesentlichen Änderungen werden wir Sie in der App informieren.</p>
+
+        <h2>11. Kontakt</h2>
+        <div class="contact-box">
+            <p>Bei Fragen zum Datenschutz erreichen Sie uns unter:</p>
+            <p><strong>E-Mail:</strong> <a href="mailto:pawindustries1505@gmail.com">pawindustries1505@gmail.com</a></p>
+        </div>
+    </div>
+
+    <!-- ENGLISH VERSION -->
+    <div class="section-en" id="content-en">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: January 2025</p>
+
+        <p>This privacy policy explains how the "Padello" mobile application (the "App") collects, uses, and protects your personal data.</p>
+
+        <h2>1. Data Controller</h2>
+        <p>The data controller responsible for your data is:</p>
+        <div class="contact-box">
+            <strong>Padello App</strong><br>
+            Email: <a href="mailto:pawindustries1505@gmail.com">pawindustries1505@gmail.com</a>
+        </div>
+
+        <h2>2. Data We Collect</h2>
+
+        <h3>2.1 Push Notifications</h3>
+        <p>When you enable push notifications, we store:</p>
+        <ul>
+            <li><strong>Push Token:</strong> A unique device identifier to send you notifications about available padel slots</li>
+            <li><strong>Language Setting:</strong> Your preferred language (German/English) for notifications</li>
+            <li><strong>Alert Configurations:</strong> Date, time range, and location preferences for your slot alerts</li>
+        </ul>
+
+        <h3>2.2 Analytics</h3>
+        <p>We use Mixpanel for anonymized usage analytics. This includes:</p>
+        <ul>
+            <li>Which features are used (e.g., map view, filters)</li>
+            <li>General device information (platform, app version)</li>
+            <li>No personal data such as name or email</li>
+        </ul>
+
+        <h3>2.3 Locally Stored Data</h3>
+        <p>The following data is stored only on your device and not transmitted to us:</p>
+        <ul>
+            <li>Language setting</li>
+            <li>Dark mode preference</li>
+            <li>Onboarding status</li>
+            <li>Last selected region</li>
+        </ul>
+
+        <h2>3. Purpose of Data Processing</h2>
+        <ul>
+            <li><strong>Push Notifications:</strong> To inform you about available padel slots matching your alert criteria</li>
+            <li><strong>Analytics:</strong> To improve the app and fix bugs</li>
+            <li><strong>Settings:</strong> To remember your preferences</li>
+        </ul>
+
+        <h2>4. Third-Party Services</h2>
+        <p>We use the following third-party services:</p>
+        <ul>
+            <li><strong>Expo (expo.dev):</strong> For push notifications. <a href="https://expo.dev/privacy" target="_blank">Privacy Policy</a></li>
+            <li><strong>Mixpanel:</strong> For anonymized analytics. <a href="https://mixpanel.com/legal/privacy-policy/" target="_blank">Privacy Policy</a></li>
+            <li><strong>Open-Meteo:</strong> For weather data (no personal data). <a href="https://open-meteo.com/en/terms" target="_blank">Terms</a></li>
+        </ul>
+
+        <h2>5. Data Retention and Deletion</h2>
+        <ul>
+            <li><strong>Push tokens and alerts:</strong> Stored on our server and automatically deleted when you uninstall the app or delete all alerts</li>
+            <li><strong>Analytics data:</strong> Automatically anonymized after 12 months</li>
+            <li><strong>Local data:</strong> Deleted when you uninstall the app</li>
+        </ul>
+
+        <h2>6. Your Rights (GDPR)</h2>
+        <p>You have the following rights regarding your data:</p>
+        <ul>
+            <li><strong>Access:</strong> You can request information about data we store about you</li>
+            <li><strong>Deletion:</strong> You can request deletion of your data</li>
+            <li><strong>Objection:</strong> You can object to data processing</li>
+            <li><strong>Portability:</strong> You can receive your data in a common format</li>
+        </ul>
+        <p>Contact us at <a href="mailto:pawindustries1505@gmail.com">pawindustries1505@gmail.com</a> to exercise your rights.</p>
+
+        <h2>7. Disabling Push Notifications</h2>
+        <p>You can disable push notifications at any time:</p>
+        <ul>
+            <li><strong>iOS:</strong> Settings → Padello → Notifications → Disable</li>
+            <li><strong>Android:</strong> Settings → Apps → Padello → Notifications → Disable</li>
+        </ul>
+
+        <h2>8. Data Security</h2>
+        <p>We use industry-standard security measures:</p>
+        <ul>
+            <li>HTTPS encryption for all data transfers</li>
+            <li>Secure server infrastructure</li>
+            <li>No storage of sensitive data like passwords or payment information</li>
+        </ul>
+
+        <h2>9. Children</h2>
+        <p>This app is not directed at children under 13 years of age. We do not knowingly collect data from children under 13.</p>
+
+        <h2>10. Changes</h2>
+        <p>We may update this privacy policy. For significant changes, we will notify you within the app.</p>
+
+        <h2>11. Contact</h2>
+        <div class="contact-box">
+            <p>For privacy-related questions, contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:pawindustries1505@gmail.com">pawindustries1505@gmail.com</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            document.getElementById('content-de').classList.remove('active');
+            document.getElementById('content-en').classList.remove('active');
+            document.getElementById('btn-de').classList.remove('active');
+            document.getElementById('btn-en').classList.remove('active');
+
+            document.getElementById('content-' + lang).classList.add('active');
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
